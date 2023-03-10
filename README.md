@@ -1,2 +1,1 @@
-# website-riznal
-tugas buat website
+Praktikum pemrograman web dasar
