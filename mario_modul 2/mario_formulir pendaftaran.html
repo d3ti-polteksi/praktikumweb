@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulir Pendaftaran</title>
+</head>
+<body>
+<form action="login.php" method="POST">
+<fieldset>
+<legend>Formulir Pendaftaran</legend>
+<p>
+<label>Nama:</label>
+<input type="text" name="Nama Lengkap " placeholder="Nama Lengkap..."/>
+</p>
+<p>
+<label>Username:</label>
+<input type="text" name="username" placeholder="username..." />
+</p>
+<p>
+    <label>Email</label>
+    <input type="email" name="Email" placeholder="Email..."/>
+</p>
+<p>
+<label>Password:</label>
+<input type="password" name="password" placeholder="password..." />
+</p>
+<p>
+    <label>
+        <input type="checkbox" name="Laki - laki" value="Laki - laku"/> Laki - laki
+        <input type="checkbox" name="Perempuan" value="Perempuan"/> Perempuan
+    </label>
+    <br>
+<label for="agama">Agama</label>
+<select id="Agama">
+    <option value="islam">Islam</option>
+    <option value="kristen">Kristen</option>
+    <option value="katolik">Katolik</option>
+    <option value="hindu">Hindu</option>
+    <option value="budha">Budha</option>
+    <option value="konghucu">Konghucu</option>
+</select>
+<br>
+<label for="biografi">Biografi</label>
+<textarea cols="40" rows="10" id="biografi"></textarea>
+<p>
+<input type="submit" name="Daftar" value="Daftar" />
+</p>
+</fieldset>
+</form>
+</body>
+</html>
