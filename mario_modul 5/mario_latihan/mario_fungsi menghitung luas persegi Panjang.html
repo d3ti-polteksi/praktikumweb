@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menghitung Luas Persegi Panjang</title>
+  </head>
+  <style>
+    h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: larger;
+      color: black;
+    }
+    .sidebar {
+      border-radius: 6px;
+      border-color: black;
+      background-color: aqua;
+      float: left;
+    }
+  </style>
+  <body>
+    <div class="sidebar">
+      <h1>Menghitung Luas Persegi Panjang</h1>
+      <form>
+        <label for="panjang">Panjang :</label>
+        <input type="number" id="panjang" name="panjang"><br>
+
+        <label for="lebar">Lebar :</label>
+        <input type="number" id="lebar" name="lebar"><br>
+
+        <button type="button" onclick="hitungLuas()">Hitung Luas</button>
+        <input type="reset" value="Reset"><br>
+
+        <label for="luas">Luas :</label>
+        <input type="number" id="luas" name="luas" readonly>
+      </form>
+    </div>
+
+    <script>
+      function hitungLuas() {
+        // Ambil nilai dari input panjang dan lebar
+        let panjang = document.getElementById("panjang").value;
+        let lebar = document.getElementById("lebar").value;
+
+        // Hitung luas persegi panjang
+        let luas = panjang * lebar;
+
+        // Tampilkan hasil pada input luas
+        document.getElementById("luas").value = luas;
+      }
+    </script>
+  </body>
+</html>

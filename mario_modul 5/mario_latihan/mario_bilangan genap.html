@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Bilangan Genap</title>
+</head>
+<body>
+  <p id="hasil"></p> <!-- tambahkan elemen untuk menampilkan hasil -->
+  
+  <script>
+    let angka = 3; // ganti dengan angka yang ingin dicek
+
+    if(angka % 2 === 0) {
+      document.getElementById("hasil").innerHTML = angka + "bilangan genap";
+    } else {
+      document.getElementById("hasil").innerHTML = angka + "bilangan ganjil";
+    }
+  </script>
+</body>
+</html>

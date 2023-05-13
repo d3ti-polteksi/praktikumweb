@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Perulangan While</title>
+</head>
+<body>
+  <p id="hasil"></p> <!-- tambahkan elemen untuk menampilkan hasil -->
+  
+  <script>
+    let angka = 0;
+    let hasil = "";
+
+    while (angka <= 10) {
+      hasil += angka + " ";
+      angka++;
+    }
+
+    document.getElementById("hasil").innerHTML = hasil;
+  </script>
+</body>
+</html>

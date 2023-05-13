@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Kategori Nilai</title>
+</head>
+<body>
+  <p id="hasil"></p> <!-- tambahkan elemen untuk menampilkan hasil -->
+  
+  <script>
+    let nilai = 80; // ganti dengan nilai yang ingin dicek
+
+    if (nilai > 90) {
+      document.getElementById("hasil").innerHTML = "Sangat Baik";
+    } else if (nilai > 75) {
+      document.getElementById("hasil").innerHTML = "Baik";
+    } else if (nilai > 60) {
+      document.getElementById("hasil").innerHTML = "Cukup";
+    } else {
+      document.getElementById("hasil").innerHTML = "Kurang";
+    }
+  </script>
+</body>
+</html>
